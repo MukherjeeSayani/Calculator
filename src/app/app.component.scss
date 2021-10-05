@@ -1,0 +1,94 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+*{
+  box-sizing: border-box;
+  font-size:20px;
+}
+html{
+  background:#ccc;
+  height:100%;
+  font-family: 'Open Sans', sans-serif;
+}
+#calculator{
+  background:#efefef;
+  width:250px;
+  margin:20px auto;
+  border:4px solid orange;
+  border-radius:8px;
+  box-shadow:0 0 10px #aaa, inset 0 0 2px #333;
+  padding:10px;
+}
+.screen{
+  position:relative;
+  background: -webkit-linear-gradient(top, rgba(30,87,153,.4) 0%,rgba(41,137,216,.4) 50%,rgba(32,124,202,.4) 51%,rgba(125,185,232,.4) 100%);
+  flex:1 100%;
+  border:1px solid #777;
+  height:45px;
+  border-radius:2px;
+  margin:5px;
+  padding:5px;
+}
+.expression{
+  position:absolute;
+  top:5px;
+  right:8px;
+  font-size:12px;
+}
+.result{
+  line-height:45px;
+  font-size:28px;
+  float:right;
+}
+.keys{
+  -ms-box-orient: horizontal;
+  display: -ms-flexbox;
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  padding-top:10px;
+  width:100%;
+}
+.btn{
+  background:#fff;
+  -webkit-flex:1 20%;
+  width:40px;
+  height:40px;
+  margin:5px;
+  cursor:pointer;
+  border-radius:5px;
+  border:1px solid #aaa;
+  padding:10px;
+  text-align:center;
+  line-height:18px;
+  
+  &:hover{
+    background:#ccc;
+  }
+}
+.clear{
+  -webkit-flex:3 43%;
+}
+.clear all{
+  position:relative;
+  padding-top:7px;
+}
+.clear all:after{
+  position:absolute;
+  top:10px;
+  left:18px;
+  content:"_";
+}
+.operator{
+  background:#bbb;
+}
+.equals{
+  background:orange;
+  
+  &:hover{
+    background:darkorange;
+  }
+}
